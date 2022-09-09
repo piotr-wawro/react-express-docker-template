@@ -1,0 +1,15 @@
+{
+    "name": "Dockerfile.devcontainer",
+    "context": "..",
+    "dockerFile": "../docker/Dockerfile.devcontainer",
+    "forwardPorts": [3000, 3001],
+    "containerEnv": {
+        "CHOKIDAR_USEPOLLING": "true",
+        "WATCHPACK_POLLING": "true"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["dbaeumer.vscode-eslint"]
+        }
+    }
+}
